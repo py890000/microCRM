@@ -1,0 +1,9 @@
+
+
+<h1>User's context</h1>
+<%= @user.name %>
+<%= @user.email %>
+<%= @user.id %>
+<%= @user.remember_token %>
+
+<%= link_to 'update user', edit_user_path(@user) %>

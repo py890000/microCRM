@@ -1,0 +1,4 @@
+<h1> update user</h1>
+<%= form_for @user,url: { controller: 'users', action: 'update', id: @user } do |f| %>
+<%= render :partial => 'form',:locals =>{:f =>f} %>
+<% end %>
