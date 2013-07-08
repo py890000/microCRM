@@ -1,3 +1,4 @@
+
 MicroCRM::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
@@ -34,4 +35,6 @@ MicroCRM::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+
 end

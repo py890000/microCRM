@@ -47,6 +47,9 @@ end
 gem 'annotate'
 # To use ActiveModel has_secure_password
 gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'omniauth'
+gem 'omniauth-taobao', :git =>'git://github.com/ballantyne/omniauth-taobao.git'
+
 
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
