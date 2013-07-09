@@ -8,7 +8,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   #provider :github, SERVICES['github']['key'], SERVICES['github']['secret'] # if SERVICES['github']
   #provider :twitter, SERVICES['twitter']['key'], SERVICES['twitter']['secret'] # if SERVICES['twitter']
   #provider :tumblr, SERVICES['tumblr']['key'], SERVICES['tumblr']['secret'] # if SERVICES['tumblr']
-  provider :taobao, SERVICES['taobao']['key'], SERVICES['taobao']['secret'] # if SERVICES['tumblr']
+  provider :taobao, SERVICES['taobao']['key'], SERVICES['taobao']['secret'], :options => {:user_type => :seller}# if SERVICES['tumblr']
  # provider :vimeo, SERVICES['vimeo']['key'], SERVICES['vimeo']['secret'] # if SERVICES['vimeo']
 
   # Note: access_type can be 'online' (for just authenticating) or 'offline' (for using services)
