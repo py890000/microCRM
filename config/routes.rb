@@ -2,6 +2,12 @@ MicroCRM::Application.routes.draw do
 
 
 
+  resources :permissions
+
+
+  resources :roles
+
+
   resources :sessions, only: [:new, :create, :destroy]
   resources :users
   match '/signup', to: 'users#new'

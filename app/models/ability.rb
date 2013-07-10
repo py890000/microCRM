@@ -1,7 +1,19 @@
 class Ability
   include CanCan::Ability
 
+
   def initialize(user)
+    #logger.debug user
+    user ||= User.new
+    #logger.debug user
+    user.role.permissions.each do | perm |
+      p "++++++++++++++++++++++++"
+      p perm.action.to_sym
+      p perm.subject_class.camelize.constantize
+      #p perm.subject_class.constantize
+      can perm.action.to_sym, perm.subject_class.camelize.constantize
+
+    end  
 
 
 
