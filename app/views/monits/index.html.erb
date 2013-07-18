@@ -1,0 +1,29 @@
+<h1>Listing monits</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Script</th>
+    <th>Desc</th>
+    <th>State</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @monits.each do |monit| %>
+  <tr>
+    <td><%= monit.name %></td>
+    <td><%= monit.script %></td>
+    <td><%= monit.desc %></td>
+    <td><%= monit.state %></td>
+    <td><%= link_to 'Show', monit %></td>
+    <td><%= link_to 'Edit', edit_monit_path(monit) %></td>
+    <td><%= link_to 'Destroy', monit, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Monit', new_monit_path %>

@@ -34,6 +34,8 @@ gem 'bootstrap_helper', "~>1.4.1"
 #权限
 gem "cancan", "~> 1.6.8"
 gem "rb-readline",'~> 0.4.2'
+gem 'whenever', :require => false
+
 
 group :test,:development  do
   gem "rspec-rails"

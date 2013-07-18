@@ -2,6 +2,9 @@ MicroCRM::Application.routes.draw do
 
 
 
+  resources :monits
+
+
   resources :permissions
 
 

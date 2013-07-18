@@ -11,7 +11,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130710082250) do
+ActiveRecord::Schema.define(:version => 20130711074130) do
+
+  create_table "monits", :force => true do |t|
+    t.string   "name"
+    t.string   "script"
+    t.string   "desc"
+    t.integer  "state"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "permissions", :force => true do |t|
     t.string   "name"

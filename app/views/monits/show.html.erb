@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @monit.name %>
+</p>
+
+<p>
+  <b>Script:</b>
+  <%= @monit.script %>
+</p>
+
+<p>
+  <b>Desc:</b>
+  <%= @monit.desc %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @monit.state %>
+</p>
+
+
+<%= link_to 'Edit', edit_monit_path(@monit) %> |
+<%= link_to 'Back', monits_path %>
