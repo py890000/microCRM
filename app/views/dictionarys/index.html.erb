@@ -1,0 +1,17 @@
+<h1>Dictionary</h1>
+<table class="table" >
+  <tr>
+    <th>Name</th>
+    <th>Code</th>
+    <th>ordered</th>
+    <th>desc</th>
+  </tr>
+  <% @dictionarys.each do |dictionary| %>
+    <tr><%= dictionary.name %></tr>
+    <tr><%= dictionary.code%> </tr>
+    <tr><%= dictionary.group%></tr>
+    <tr><%= dictionary.description%></tr>
+  <% end %> 
+
+  
+</table>
